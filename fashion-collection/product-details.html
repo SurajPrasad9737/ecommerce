@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - The Collection India</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <a href="index.html">The Collection India</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="clothing.html">Clothing</a>
+            <a href="#">Accessories</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="nav-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+        </div>
+    </nav>
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+        <div class="product-container">
+            <!-- Product Images -->
+            <div class="product-images">
+                <div class="main-image">
+                    <img id="mainImage" src="" alt="Product Image">
+                </div>
+                <div class="thumbnail-images">
+                    <!-- Thumbnails will be added dynamically -->
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <h1 class="product-title"></h1>
+                <div class="product-price"></div>
+                
+                <!-- Size Selection -->
+                <div class="size-selection">
+                    <h3>Select Size</h3>
+                    <div class="size-options">
+                        <button class="size-btn" data-size="S">S</button>
+                        <button class="size-btn" data-size="M">M</button>
+                        <button class="size-btn" data-size="L">L</button>
+                        <button class="size-btn" data-size="XL">XL</button>
+                        <button class="size-btn" data-size="XXL">XXL</button>
+                    </div>
+                    <a href="#" class="size-guide">Size Guide</a>
+                </div>
+
+                <!-- Quantity Selection -->
+                <div class="quantity-selection">
+                    <h3>Quantity</h3>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" max="10" class="quantity-input">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+
+                <!-- Add to Cart -->
+                <button class="add-to-cart-btn">Add to Cart</button>
+
+                <!-- Product Details -->
+                <div class="product-details-tabs">
+                    <div class="tab-headers">
+                        <button class="tab-btn active" data-tab="description">Description</button>
+                        <button class="tab-btn" data-tab="details">Details</button>
+                        <button class="tab-btn" data-tab="shipping">Shipping</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-panel active" id="description">
+                            <!-- Description content will be added dynamically -->
+                        </div>
+                        <div class="tab-panel" id="details">
+                            <ul class="product-features">
+                                <!-- Features will be added dynamically -->
+                            </ul>
+                        </div>
+                        <div class="tab-panel" id="shipping">
+                            <p>Free shipping on all orders above ₹999</p>
+                            <p>Estimated delivery time: 5-7 business days</p>
+                            <p>Easy returns within 7 days</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>The Collection India - Your destination for premium fashion and lifestyle products.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Collection India. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/product-details.js"></script>
+</body>
+</html>

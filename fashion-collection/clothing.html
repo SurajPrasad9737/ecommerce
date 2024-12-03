@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing - The Collection</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/clothing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="announcement-bar">
+        <p>Free Shipping On All Orders Above ₹5000</p>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>The Collection</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#new-in">New In</a></li>
+                <li><a href="clothing.html" class="active">Clothing</a></li>
+                <li><a href="#accessories">Accessories</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#sale">Sale</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#search"><i class="fas fa-search"></i></a>
+                <a href="#account"><i class="fas fa-user"></i></a>
+                <a href="#cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Clothing Page Header -->
+    <div class="page-header">
+        <h1>Clothing</h1>
+        <div class="filters">
+            <select class="filter-select">
+                <option value="">Sort By</option>
+                <option value="newest">Newest</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+            </select>
+            <select class="filter-select">
+                <option value="">Filter By</option>
+                <option value="shirts">Shirts</option>
+                <option value="dresses">Dresses</option>
+                <option value="pants">Pants</option>
+                <option value="ethnic">Ethnic Wear</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Product Grid -->
+    <section class="clothing-grid">
+        <!-- Products will be dynamically loaded from JavaScript -->
+    </section>
+
+    <!-- Load More Button -->
+    <div class="load-more">
+        <button id="loadMoreBtn">Load More</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>The Collection brings you the finest in luxury fashion and lifestyle products.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#shipping">Shipping Policy</a></li>
+                    <li><a href="#returns">Returns & Exchanges</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#new-in">New In</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#sale">Sale</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 The Collection. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/clothing.js"></script>
+</body>
+
+</html>
